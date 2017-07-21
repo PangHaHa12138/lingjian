@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/activity_base_toobar"/>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pic_bg2x">
+
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#ebebeb"
+            android:childDivider="@android:color/transparent"
+            android:dividerHeight="0.5dp"
+            android:footerDividersEnabled="false"
+            android:groupIndicator="@null">
+
+        </ExpandableListView>
+
+        <Button
+            android:id="@+id/addtype_button"
+            android:textSize="16sp"
+            android:textColor="@color/left_menu_font"
+            android:background="@drawable/add_renwu_bg"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/add_zerenren_button"
+            android:layout_width="340dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

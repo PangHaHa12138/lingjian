@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--主布局-->
+
+    <RelativeLayout
+        android:id="@+id/mainbaba"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pic_bg3x">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tb_comn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/titbar_color"
+            android:gravity="center"
+            app:contentInsetStart="0dp">
+
+            <TextView
+                android:id="@+id/toobar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:singleLine="true"
+                />
+            <ImageButton
+                android:id="@+id/toobar_rightView"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:src="@drawable/title_but_right3x"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/mainlistandadd"
+            android:layout_below="@+id/tb_comn"
+            android:layout_above="@+id/bootomlayout"
+            android:background="@drawable/pic_bg3x"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<android.support.v4.widget.SwipeRefreshLayout-->
+                <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+
+                <!--android:id="@+id/swiperefreshlayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <!--<com.github.jdsjlzx.recyclerview.LRecyclerView-->
+                    <!--android:id="@+id/lrecycleview"-->
+                    <!--android:cacheColorHint="#00000000"-->
+                    <!--android:listSelector="#00000000"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+
+                        android:id="@+id/swiperefreshlayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.baoyz.swipemenulistview.SwipeMenuListView
+                            android:id="@+id/swiplistView1"
+                            android:cacheColorHint="#00000000"
+                            android:listSelector="#00000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="460dp" />
+                    </android.support.v4.widget.SwipeRefreshLayout>
+
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/swiperefreshlayout2"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.baoyz.swipemenulistview.SwipeMenuListView
+                            android:id="@+id/swiplistView2"
+                            android:visibility="invisible"
+                            android:cacheColorHint="#00000000"
+                            android:listSelector="#00000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="460dp" />
+                    </android.support.v4.widget.SwipeRefreshLayout>
+
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/swiperefreshlayout3"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <com.baoyz.swipemenulistview.SwipeMenuListView
+                        android:id="@+id/swiplistView3"
+                        android:visibility="invisible"
+                        android:cacheColorHint="#00000000"
+                        android:listSelector="#00000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="460dp" />
+                    </android.support.v4.widget.SwipeRefreshLayout>
+
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/swiperefreshlayout4"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <com.baoyz.swipemenulistview.SwipeMenuListView
+                        android:id="@+id/swiplistView4"
+                        android:visibility="invisible"
+                        android:cacheColorHint="#00000000"
+                        android:listSelector="#00000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="460dp" />
+                    </android.support.v4.widget.SwipeRefreshLayout>
+
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/swiperefreshlayout5"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <com.baoyz.swipemenulistview.SwipeMenuListView
+                        android:id="@+id/swiplistView5"
+                        android:visibility="invisible"
+                        android:cacheColorHint="#00000000"
+                        android:listSelector="#00000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="460dp" />
+                    </android.support.v4.widget.SwipeRefreshLayout>
+
+                    <!--<com.ashokvarma.bottomnavigation.BottomNavigationBar-->
+                    <!--android:id="@+id/bottom_navigation_bar"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"/>-->
+
+                </RelativeLayout>
+
+            <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+            <ImageView
+                android:id="@+id/no_renwuphoto"
+                android:visibility="gone"
+                android:src="@drawable/icon_zanwurenwu3x"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="160dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--<LinearLayout-->
+                <!--android:id="@+id/add_renwu"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_marginBottom="-20dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:src="@drawable/tab_btn_add"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/addrenwubutton"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="16sp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="@string/xinzengbutton"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+
+            <!--</LinearLayout>-->
+
+        </RelativeLayout>
+
+
+
+
+        <FrameLayout
+            android:layout_above="@+id/bootomlayout"
+            android:id="@+id/oa_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <!--android:layout_above="@+id/bootomlayout"-->
+
+        <LinearLayout
+            android:id="@+id/bootomlayout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+                <LinearLayout
+                    android:id="@+id/lingjian_but"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:background="@color/changebackground"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/xian"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/Lj_icon"
+                        android:src="@drawable/tab_renwuguanli_pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/Lj_text"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/lingjian"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/oa_but"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:background="@color/changebackground"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/xian"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <ImageView
+
+                        android:id="@+id/oa_icon"
+                        android:src="@drawable/tab_oaofficework_nor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/oa_text"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/tab1"
+                        android:text="@string/oa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_renwu"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/tab_btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--<TextView-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:textColor="@color/addrenwubutton"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:textSize="16sp"-->
+            <!--android:text="@string/xinzengbutton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/bootomlayout"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="55dp">-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:background="@color/black_hehe"-->
+                <!--android:layout_height="0.3dp"/>-->
+
+            <!--<RadioGroup-->
+                <!--android:id="@+id/bootombutton"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<RadioButton-->
+                    <!--android:button="@null"-->
+                    <!--android:gravity="center"-->
+                    <!--android:id="@+id/lingjian"-->
+                    <!--android:background="@drawable/colorbroung"-->
+                    <!--android:drawableTop="@drawable/tabbut"-->
+                    <!--android:text="@string/lingjian"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:textColor="@drawable/colorbroung"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="55dp">-->
+
+                <!--</RadioButton>-->
+
+                <!--<RadioButton-->
+                    <!--android:gravity="center"-->
+                    <!--android:button="@null"-->
+                    <!--android:id="@+id/OA"-->
+                    <!--android:background="@drawable/colorbroung"-->
+                    <!--android:drawableTop="@drawable/tabbut2"-->
+                    <!--android:text="@string/oa"-->
+                    <!--android:textColor="@drawable/colorbroung"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="55dp">-->
+
+                <!--</RadioButton>-->
+
+            <!--</RadioGroup>-->
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+
+    <!--侧滑菜单-->
+
+
+    <LinearLayout
+        android:id="@+id/lv_left_menu"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:background="#e0f4ff"
+        android:orientation="vertical"
+        android:layout_gravity="left">
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/person_seting"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+            <com.hxzh.uniwill.lingjian.View.CircleImageView
+                android:clickable="true"
+                android:layout_marginTop="40dp"
+                android:id="@+id/persion_photo"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/icon_left_bar_photo3x"
+                app:border_color="@color/white"/>
+            <TextView
+                android:id="@+id/persion_name"
+                android:textSize="15sp"
+                android:textColor="@color/left_menu_font"
+                android:text="@string/persion_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33000000"/>
+        <!--?android:attr/selectableItemBackground-水波纹效果-->
+
+        <LinearLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:id="@+id/daiban"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_left_bar_daibanrenwu3x"/>
+            <ImageView
+                android:id="@+id/daiban_red"
+                android:visibility="invisible"
+                android:src="@drawable/icon_left_bar_tixing3"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/left_menu_font"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daiban"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="230dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="1dp"
+            android:background="#33000000"/>
+
+        <LinearLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:id="@+id/yiban"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_left_bar_yibanrenwu3x"/>
+            <ImageView
+                android:id="@+id/yiban_red"
+                android:visibility="invisible"
+                android:src="@drawable/icon_left_bar_tixing3"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/left_menu_font"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yifa"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="230dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="1dp"
+            android:background="#33000000"/>
+
+        <LinearLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:id="@+id/xiafa"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical">
+            <ImageView
+
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_left_bar_xiafarenwu3x"/>
+            <ImageView
+                android:id="@+id/xiafa_red"
+                android:visibility="invisible"
+                android:src="@drawable/icon_left_bar_tixing3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/left_menu_font"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xiafa"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="230dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="1dp"
+            android:background="#33000000"/>
+
+        <LinearLayout
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:id="@+id/chexiao"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical">
+            <ImageView
+
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_leftbar_chexiao"/>
+            <ImageView
+                android:id="@+id/chexiao_red"
+                android:visibility="invisible"
+                android:src="@drawable/icon_left_bar_tixing3"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/left_menu_font"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chexiao"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="230dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="1dp"
+            android:background="#33000000"/>
+
+        <LinearLayout
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:id="@+id/zhanting"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center_vertical">
+            <ImageView
+
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_left_bar_pausetask3x"/>
+            <ImageView
+                android:id="@+id/zhanting_red"
+                android:visibility="invisible"
+                android:src="@drawable/icon_left_bar_tixing3"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/left_menu_font"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zhanting"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33000000"/>
+
+        <LinearLayout
+            android:id="@+id/exit"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:background="@drawable/exit_button"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_left_bar_tuichu3"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/x15"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tuichu"
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

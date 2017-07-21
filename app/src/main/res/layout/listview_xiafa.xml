@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_bg3x">
+
+    <include layout="@layout/activity_right_toobar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:id="@+id/xiafa_listview"
+            android:layout_width="match_parent"
+            android:layout_height="460dp" />
+        <RelativeLayout
+            android:id="@+id/xiugai"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/add_renwu_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_width="220dp"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/buttext"
+                android:textColor="#FF6633"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:text="修改"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

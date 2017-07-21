@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/pop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/renwumiaoshu_bg"
+            android:orientation="horizontal">
+
+                 <EditText
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="8"
+                        android:id="@+id/search_name"
+                        android:drawableLeft="@drawable/tab_but_sousuo3x"
+                        android:hint="@string/searchrenwu"
+                        android:background="@drawable/renwumiaoshu_bg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+            <View
+                android:background="@color/gray"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"/>
+                <TextView
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:text="@string/sure"
+                    android:layout_weight="2"
+                    android:id="@+id/makesure"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+</RelativeLayout>

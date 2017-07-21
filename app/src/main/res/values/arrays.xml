@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>柱状图</item>
+        <item>折线图</item>
+    </string-array>
+</resources>

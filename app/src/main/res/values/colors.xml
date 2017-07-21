@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="Indigo_colorPrimaryDark">#303f9f</color>
+    <color name="Indigo_colorPrimary">#3f51b5</color>
+    <color name="Indigo_nav_color">#4675FF</color>
+
+    <color name="titbar_color">#0589ba</color>
+    <color name="titbar_color2">#007ba7</color>
+
+
+    <color name="left_menu_font">#142f3d</color>
+    <color name="black">#295775</color>
+
+    <color name="find_possword">#b2d4d6</color>
+    <color name="listview_item_right_bg">#e0f4ff</color>
+
+    <color name="black_hehe">#8e8e8e</color>
+    <color name="huise">#cccccc</color>
+
+    <color name="gray">#545454</color>
+
+    <color name="button">#fff</color>
+    <color name="guoqitian">#FF9966</color>
+    <color name="huanwenzi">#87CEEB</color>
+
+    <color name="list_divider_line">#545454</color>
+
+    <color name="color_ff">#F0F0F0</color>
+    <color name="color_00">#8A000000</color>
+
+    <color name="default_header_color">#445566</color>
+
+    <color name="red_normal">#FF0000</color>
+    <color name="red_pressed">#FF6666</color>
+    <color name="green_normal">#37C000</color>
+    <color name="green_pressed">#30A070</color>
+    <color name="purple_normal">#9932CC</color>
+    <color name="purple_pressed">#9F79EE</color>
+
+    <color name="lightGray">#e0e0e0</color>
+    <color name="dark">#5e5656</color>
+    <color name="hint">#666262</color>
+    <color name="divider">#c9cbcd</color>
+    <color name="disable">#f5f5f5</color>
+    <color name="background">#c9cbcd</color>
+    <color name="background_detail">#d2c3c7</color>
+    <color name="split">#cccccc</color>
+    <color name="feed_text_color">#4a5158</color>
+    <color name="button_login_color">#3a7eec</color>
+    <color name="button_signup_color">#93b3d7</color>
+    <color name="background_login">#fafafa</color>
+    <color name="title_color">#2e2d2d</color>
+    <color name="des_color">#404346</color>
+    <color name="color_ff4a57">#ff4a57</color>
+    <color name="color_light_blue">#14acae</color>
+    <color name="addrenwubutton">#295775</color>
+
+    <color name="touming">#00000000</color>
+
+    <color name="shen">#007ba7</color>
+    <color name="qian">#aae8f7</color>
+    <color name="updataversionbut">#12aae0</color>
+
+    <color name="tab1">#13aae1</color>
+    <color name="tab2">#b7ebf6</color>
+    <color name="changebackground">#98dff5</color>
+
+    <color name="bandround">#0e749c</color>
+    <color name="textcolordd">#68b3ca</color>
+
+    <color name="xian">#87c8dc</color>
+    <color name="genzobg">#089cc4</color>
+    <color name="tongguo">#4bf9f4</color>
+    <color name="shenpbg">#e9edee</color>
+
+
+
+
+</resources>

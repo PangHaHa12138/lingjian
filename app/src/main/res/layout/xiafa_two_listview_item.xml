@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/titbar_color"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/sontext"
+            android:text="令箭新业务需求开发任务1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/list_but_nextpage3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_gravity="center_horizontal"
+            android:layout_width="340dp"
+            android:layout_height="0.3dp"
+            android:background="@color/white"/>
+    </RelativeLayout>
+
+
+    </LinearLayout>
+

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hxzh.uniwill.lingjian.View.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_bg3x"
+    android:fadingEdge="vertical"
+    android:fadingEdgeLength="100dp"
+    android:fillViewport="true">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/activity_right_toobar"/>
+
+    <RelativeLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_pic_renwujindu3x"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务进度"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.hxzh.uniwill.lingjian.View.PercentCircle
+            android:layout_centerInParent="true"
+            android:id="@+id/zirenwu_deatil_jindutiao"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            app:radius="88"
+            app:circleBackground="#00000000"
+            app:ringColor="#ffffff"
+            app:textColor="#ffffff"/>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/ring"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_gravity="center_horizontal"
+        android:layout_width="340dp"
+        android:layout_height="0.3dp"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/zi_datail_layoutname"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/list_pic_zerenren3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/zirenwu_zerenren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/zi_datail_name"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:text="姓名"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_gravity="center_horizontal"
+        android:layout_width="340dp"
+        android:layout_height="0.3dp"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/zi_datail_biaozhun"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/list_pic_renwubiaozhun3x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_margin="8dp"
+                android:layout_marginLeft="18dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="@string/renwubiaozhun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="@string/renwubiaozhun"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/zi_datail_biaozhuntext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_gravity="center_horizontal"
+        android:layout_width="340dp"
+        android:layout_height="0.3dp"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:src="@drawable/list_pic_tianjiafujian3x"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="@string/fujian"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:id="@+id/zi_datail_fujian1"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/pic_xinzeng_fujian3x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/zi_datail_fujiantext1"
+                android:text="令箭新业务需求开发任务1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:id="@+id/zi_datail_fujian2"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/zi_datail_fujiantext2"
+            android:text="令箭新业务需求开发任务2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:id="@+id/zi_datail_fujian3"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/zi_datail_fujiantext3"
+            android:text="令箭新业务需求开发任务2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:id="@+id/zi_datail_fujian4"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/zi_datail_fujiantext4"
+            android:text="令箭新业务需求开发任务2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:id="@+id/zi_datail_fujian5"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/zi_datail_fujiantext5"
+            android:text="令箭新业务需求开发任务2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:id="@+id/zi_datail_fujian6"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/zi_datail_fujiantext6"
+            android:text="令箭新业务需求开发任务2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:id="@+id/zi_datail_fujian7"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/zi_datail_fujiantext7"
+            android:text="令箭新业务需求开发任务2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:id="@+id/zi_datail_fujian8"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/zi_datail_fujiantext8"
+            android:text="令箭新业务需求开发任务2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:id="@+id/zi_datail_fujian9"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/zi_datail_fujiantext9"
+            android:text="令箭新业务需求开发任务2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:id="@+id/zi_datail_fujian10"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/zi_datail_fujiantext10"
+            android:text="令箭新业务需求开发任务2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="340dp"
+        android:layout_height="0.3dp"
+        android:background="@color/white"/>
+
+
+
+</LinearLayout>
+</com.hxzh.uniwill.lingjian.View.MyScrollView>

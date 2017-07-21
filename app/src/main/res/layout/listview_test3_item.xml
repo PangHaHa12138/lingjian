@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingRight="-100dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <com.hxzh.uniwill.lingjian.View.PercentCircle
+                android:id="@+id/pencentCircle4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="8dp"
+                app:radius="63"
+                app:circleBackground="#00000000"
+                app:ringColor="#ffffff"
+                app:textColor="#000"
+                />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/ring"/>
+
+            <LinearLayout
+                android:layout_toRightOf="@id/pencentCircle3"
+                android:id="@+id/linyout"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_title_list4"
+                    android:textSize="14sp"
+                    android:text="@string/renwu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/text_persion_list4"
+                    android:textSize="11sp"
+                    android:text="@string/faburen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_toRightOf="@id/linyout"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/text_time_list4"
+                    android:text="@string/day_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@id/text_time_list4"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/text_day_list4"
+                    android:text="@string/day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:visibility="invisible"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/zhiding_item4"
+                    android:text="@string/zhiding_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginLeft="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="330dp"
+                android:layout_height="0.5dp"
+                android:background="#ffffff"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/llayout_right"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/daiban_quxiaozhiding4"
+                android:src="@drawable/list_slide_but_canstick3x"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

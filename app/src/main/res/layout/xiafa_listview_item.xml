@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="?android:attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    <ImageView
+        android:layout_marginLeft="45dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/xiafa_touxiang"
+        android:src="@drawable/pic_zerenren_touxiang_3x"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:layout_marginLeft="100dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/xiafa_name"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<TextView-->
+            <!--android:id="@+id/xiafa_rwming"-->
+            <!--android:textSize="12sp"-->
+            <!--android:text="令箭项目开发。。不啦不啦不啦"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+    <com.hxzh.uniwill.lingjian.View.PercentCircle
+        android:id="@+id/xiafa_jindutiao"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="11dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:radius="58"
+        app:circleBackground="#00000000"
+        app:ringColor="#ffffff"
+        app:textColor="#000"/>
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="9.5dp"
+        android:layout_centerVertical="true"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:src="@drawable/ring"/>
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_width="320dp"
+        android:layout_height="0.5dp"
+        android:background="@color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_bg2x">
+    <include layout="@layout/activity_right_toobar"/>
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_centerHorizontal="true"
+    android:layout_width="330dp"
+    android:layout_height="36dp"
+    android:orientation="horizontal"
+    android:background="@drawable/add_renwu_bg">
+
+    <EditText
+        android:id="@+id/sousu_zerenren"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="8"
+        android:drawableLeft="@drawable/pic_xinzeng_sousuo3x"
+        android:hint="@string/sousu"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:background="@drawable/add_renwu_bg" />
+    <View
+         android:layout_width="0.3dp"
+         android:layout_height="match_parent"
+         android:background="@color/gray"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/search_people"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:layout_weight="2"
+        android:textSize="18sp"
+        android:text="@string/sure"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ExpandableListView
+                android:layout_marginTop="36dp"
+                android:id="@+id/expandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:cacheColorHint="#00000000"
+                android:divider="#ebebeb"
+                android:childDivider="@android:color/transparent"
+                android:dividerHeight="0.5dp"
+                android:footerDividersEnabled="false"
+                android:groupIndicator="@null">
+
+            </ExpandableListView>
+
+            <Button
+                android:textSize="16sp"
+                android:textColor="@color/left_menu_font"
+                android:background="@drawable/add_renwu_bg"
+                android:id="@+id/add_zerenren_button"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/add_zerenren_button"
+                android:layout_width="340dp"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

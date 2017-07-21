@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/pic_bg3x"
+        android:id="@+id/mainoa"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/titbar_color">
+
+        <ImageButton
+            android:id="@+id/lefthaha"
+            android:clickable="true"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/title_but_left3x"/>
+
+        <TextView
+            android:id="@+id/titlehaha"
+            android:text="@string/gongdanshenqing"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/righthaha"
+            android:clickable="true"
+            android:layout_marginRight="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/title_but_right3x"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:background="@drawable/pic_bg3x"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swip1"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/shenqinglistview"
+                android:cacheColorHint="#00000000"
+                android:listSelector="#00000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.baoyz.swipemenulistview.SwipeMenuListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swip2"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/shenpilistview"
+                android:visibility="invisible"
+                android:cacheColorHint="#00000000"
+                android:listSelector="#00000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.baoyz.swipemenulistview.SwipeMenuListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/gxlayout"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/labb"
+                android:background="@color/bandround"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <RelativeLayout
+                    android:id="@+id/alllayout"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/alltext"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:text="@string/all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="0.3dp"
+                        android:background="@color/textcolordd"
+                        android:layout_height="match_parent"/>
+
+                    <View
+                        android:id="@+id/tab1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:clickable="true"
+                    android:id="@+id/wendang"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/wordtext"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/textcolordd"
+                        android:textSize="16sp"
+                        android:text="@string/word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="0.3dp"
+                        android:background="@color/textcolordd"
+                        android:layout_height="match_parent"/>
+
+                    <View
+                        android:id="@+id/tab2"
+                        android:visibility="invisible"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:clickable="true"
+                    android:id="@+id/photolayt"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/phototext"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/textcolordd"
+                        android:textSize="16sp"
+                        android:text="@string/photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="0.3dp"
+                        android:background="@color/textcolordd"
+                        android:layout_height="match_parent"/>
+
+                    <View
+                        android:id="@+id/tab3"
+                        android:visibility="invisible"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:clickable="true"
+                    android:id="@+id/vidolayt"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/vidotext"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/textcolordd"
+                        android:textSize="16sp"
+                        android:text="@string/vido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="0.3dp"
+                        android:background="@color/textcolordd"
+                        android:layout_height="match_parent"/>
+
+                    <View
+                        android:id="@+id/tab4"
+                        android:visibility="invisible"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:clickable="true"
+                    android:id="@+id/appalyot"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/apptext"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/textcolordd"
+                        android:textSize="16sp"
+                        android:text="@string/appp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <View
+                        android:id="@+id/tab5"
+                        android:visibility="invisible"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_below="@+id/labb"
+                android:id="@+id/swipall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/alllistview"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="#00000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_below="@+id/labb"
+                android:id="@+id/swipword"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:visibility="invisible"
+                    android:id="@+id/wordlistview"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="#00000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_below="@+id/labb"
+                android:visibility="invisible"
+                android:id="@+id/swipphoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:visibility="invisible"
+                    android:id="@+id/photolistview"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="#00000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:visibility="invisible"
+                android:layout_below="@+id/labb"
+                android:id="@+id/swipvido"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:visibility="invisible"
+                    android:id="@+id/vidolistview"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="#00000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:visibility="invisible"
+                android:layout_below="@+id/labb"
+                android:id="@+id/swipapp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:visibility="invisible"
+                    android:id="@+id/appplistview"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="#00000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        </RelativeLayout>
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/addbuton"-->
+            <!--android:background="@color/touming"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp" />-->
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
+

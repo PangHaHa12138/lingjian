@@ -1,0 +1,225 @@
+<resources>
+
+    <string name="app_name">办公令箭</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="logname">请输入用户名</string>
+    <string name="password">请输入密码</string>
+    <string name="loading">登录</string>
+    <string name="foget_possword">忘记密码？</string>
+    <!--左侧侧拉-->
+    <string name="persion_name">用户名</string>
+    <string name="daiban">待办任务</string>
+    <string name="yifa">已办任务</string>
+    <string name="xiafa">下发任务</string>
+    <string name="chexiao">撤销任务</string>
+    <string name="zhanting">暂停任务</string>
+    <string name="tuichu">退出</string>
+    <!--标题-->
+    <string name="renwuguanli_daiban">待办任务</string>
+    <string name="renwuguanli_xiafa">下发任务</string>
+    <string name="renwuguanli_yiban">已办任务</string>
+    <string name="renwuguanli_chexiao">撤销任务</string>
+    <string name="renwuguanli_zhanting">暂停任务</string>
+    <string name="renwu_xiafa">任务管理-下发</string>
+    <string name="renwu_xinzeng">新增任务</string>
+    <string name="Back">返回</string>
+    <string name="xiangce_photo">相册图片</string>
+
+    <string name="change_mima">修改密码</string>
+    <string name="forget_mima">忘记密码</string>
+    <string name="renwu_name">任务名</string>
+    <string name="faburen">发布人：王大锤</string>
+    <string name="day_num">3</string>
+    <string name="day">天</string>
+
+    <string name="toobar_moren_title">我是默认主题</string>
+    <string name="toobar_right_title">呵呵哒</string>
+
+    <string name="yonghu_name">用户名</string>
+    <string name="yonghu_box">邮箱</string>
+    <string name="find_possword">找回密码</string>
+
+    <string name="renwumingcheng">任务名称</string>
+    <string name="wangchenriqi">完成日期</string>
+    <string name="shijiriqi">实际完成日期</string>
+    <string name="shangbaozhouqi">上报周期</string>
+    <string name="renwubiaozhun">任务描述</string>
+    <string name="renwubiaozhun2">任务标准</string>
+    <string name="tianjiazirenwu">添加子任务</string>
+    <string name="renwumiaoshu">任务描述</string>
+    <string name="tianjiafujian">添加上报附件</string>
+    <string name="tianjiafujia233">添加下发附件</string>
+    <string name="showjiafujian">下发附件</string>
+    <string name="renwujindu">任务进度</string>
+    <string name="wancheng">修改</string>
+    <string name="wan">完成</string>
+
+    <string name="zirenwu_zerenren">责任人</string>
+    <string name="zirenwu_wanchengriqi">完成日期</string>
+    <string name="zirenwu_shangbaozhouqi">上报周期</string>
+    <string name="zirenwu_biaozhun">子任务标准</string>
+    <string name="zirenwu_tianjiafujian">添加附件</string>
+    <string name="renwumingchen">任务名称</string>
+
+    <string name="genggaitouxiang">更改头像</string>
+    <string name="xingming">姓名</string>
+    <string name="zhiwei">职位</string>
+    <string name="gongsi">上级部门</string>
+    <string name="bumen">部门</string>
+    <string name="shangji">上级</string>
+    <string name="dianhua">电话</string>
+    <string name="shouji">手机</string>
+    <string name="youxiang">邮箱</string>
+    <string name="baocun">保存</string>
+
+    <string name="qinzimian">秦自勉</string>
+    <string name="xiangmujingli">项目经理</string>
+    <string name="gongsimingchen">上级部门</string>
+    <string name="bumenlingdao">部门名称</string>
+    <string name="shangjilingdao">上级领导</string>
+    <string name="dianhuahaoma">电话号码</string>
+    <string name="shoujihao">手机号码</string>
+    <string name="youxiang_X">邮箱</string>
+
+    <string name="yuanmima">原密码</string>
+    <string name="xinmima">新密码</string>
+    <string name="xinmimatishi">新密码为6-20位英文字母，数字或者符号组成</string>
+
+    <string name="xiugaitouxiang">修改头像</string>
+    <string name="xiangce">相册</string>
+    <string name="paizhao">拍照</string>
+
+    <string name="tubiaotongji">图表统计</string>
+    <string name="renwusousu">任务搜索</string>
+    <string name="wenjiansousu">文件搜索</string>
+    <string name="paixu">排序</string>
+
+    <string name="ppp1">按上传时间排序</string>
+    <string name="ppp2">按文件名称排序</string>
+
+    <string name="username_zerenren">姓名</string>
+    <string name="userzhiwu_zerenren">职位</string>
+
+    <string name="add_zerenren_button">确定</string>
+
+    <string name="zhiding_item">置顶</string>
+    <string name="sousu">输入同事姓名直接查找</string>
+
+    <string name="xinzengbutton">任务</string>
+
+    <string name="rwname">请直接输入任务名</string>
+    <string name="gdname">请直接输入工单名</string>
+
+    <string name="fujian">附件</string>
+    <string name="wuuu">无</string>
+
+    <string name="dangqi">当前任务</string>
+    <string name="tian">日报</string>
+    <string name="zhou">周报</string>
+    <string name="yue">月报</string>
+
+    <!--footer-->
+    <string name="list_footer_loading">正在加载中…</string>
+    <string name="list_footer_network_error">点击重新加载</string>
+    <string name="list_footer_end">已经到底了</string>
+    <string name="done_precent">0%</string>
+
+    <string name="starttime">开始时间</string>
+    <string name="endtime">结束时间</string>
+    <string name="chaxun">查询</string>
+    <string name="startdata">请选择开始时间</string>
+    <string name="enddata">请选择结束时间</string>
+
+    <string name="fabu">按发布时间排序</string>
+    <string name="shengyu">按剩余时间排序</string>
+    <string name="shengxu">升序</string>
+    <string name="jiangxu">降序</string>
+    <string name="starttimeserch">按发布时间搜索</string>
+    <string name="endtimesearch">按结束时间搜索</string>
+    <string name="searchtext">按文本搜索</string>
+    <string name="sure">确认</string>
+    <string name="searchrenwu">任务搜索......</string>
+    <string name="searchfile">文件搜索......</string>
+
+    <string name="son">子任务</string>
+    <string name="fujian23">附件</string>
+
+    <string name="tishi">温馨提示</string>
+    <string name="istuichu">确定退出程序?</string>
+    <string name="surd">确定</string>
+    <string name="no">取消</string>
+
+    <string name="ri">日</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="jidu">季度</string>
+
+    <string name="sendjob">下发统计</string>
+    <string name="acceptjob">待办统计</string>
+
+    <string name="zhuzhuang">柱状图</string>
+    <string name="zhexian">折线图</string>
+
+    <string name="updataversion">升级到新版本</string>
+    <string name="updatamsg">1.有新版本啦\n2.有新版本啦.\n3.有新版本啦</string>
+    <string name="updatasuer">立即升级</string>
+    <string name="updatano">取消</string>
+    <string name="updatacode">1.0.5</string>
+
+    <string name="time">11:27</string>
+    <string name="chatname">名字</string>
+
+    <string name="shijian">时间</string>
+    <string name="neiron">内容</string>
+    <string name="zerenr">责任人</string>
+    <string name="fujx">附件</string>
+
+    <string name="oa">OA办公</string>
+    <string name="lingjian">任务管理</string>
+
+    <string name="gongdanshenqing">工单申请</string>
+    <string name="gongdanshenpi">工单审批</string>
+    <string name="gongxiangwenjian">共享文件</string>
+
+    <string name="all">全部</string>
+    <string name="word">文档</string>
+    <string name="photo">图片</string>
+    <string name="vido">视频</string>
+    <string name="appp">应用</string>
+
+    <string name="oabill">河南电力公司出差报销单</string>
+    <string name="oabill2">河南电力公司出差报销单</string>
+    <string name="oabilltype">审批类型：交通类</string>
+    <string name="oabillshenhe">待审批</string>
+
+    <string name="filename">文件名</string>
+    <string name="filetime">2017-6-15 13:44</string>
+    <string name="comefrom">来自王大锤</string>
+
+    <string name="shenqingname">申请名称</string>
+    <string name="sqr">申请人</string>
+    <string name="shenpitype">审批类型</string>
+    <string name="shenqsm">申请说明</string>
+    <string name="adddj">添加单据</string>
+    <string name="adj">单据</string>
+    <string name="xybsq">下一步审批人</string>
+    <string name="jdgz">工单进度跟踪</string>
+    <string name="addgongdan">新增</string>
+    <string name="xiugai">修改</string>
+    <string name="shpp">审批</string>
+
+    <string name="genzongtext">审核记录</string>
+
+    <string name="shenpiren">审批人:</string>
+    <string name="shenpitye">审核状态:</string>
+    <string name="shenpiyij">审核意见:</string>
+    <string name="shenpitim">审核时间:</string>
+    <string name="spjy">审批意见</string>
+
+    <string name="yes">通过</string>
+    <string name="noo">不通过</string>
+
+
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="?android:attr/selectableItemBackground">
+
+    <View
+        android:focusable="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_width="330dp"
+        android:layout_height="0.5dp"
+        android:background="#ebebeb"/>
+
+    <ImageView
+        android:focusable="false"
+        android:src="@drawable/pic_zerenren_touxiang_3x"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="45dp"
+        android:id="@+id/touxiang"
+        android:layout_width="38dp"
+        android:layout_height="38dp" />
+
+    <TextView
+        android:focusable="false"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="90dp"
+        android:id="@+id/username_text"
+        android:text="@string/username_zerenren"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:focusable="false"
+        android:id="@+id/duihao8"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/but_zerenren_def_3x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:focusable="false"
+        android:visibility="invisible"
+        android:id="@+id/duihao2"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/but_zerenren_sel_3x"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</RelativeLayout>

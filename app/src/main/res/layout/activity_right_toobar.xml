@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_toobar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/titbar_color"
+    android:minHeight="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/toolbar_main_title"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="@string/toobar_moren_title"
+        android:scrollHorizontally="true"
+        android:textColor="@color/white"
+        android:layout_gravity="center" />
+    <!--自定义toolbar的title 和subtitle -->
+
+    <ImageView
+        android:id="@+id/xiaoxired"
+        android:layout_gravity="right"
+        android:visibility="invisible"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/icon_left_bar_tixing3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/toobar_right_view"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/title_but_chat_3x"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</android.support.v7.widget.Toolbar>

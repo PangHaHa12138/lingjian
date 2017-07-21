@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout
+    android:paddingTop="8dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginLeft="12dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_huibaoxinxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="11sp"
+        android:layout_marginLeft="12dp"
+        android:text="@string/shijian"
+        android:textColor="@color/white"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/huibao_data"
+        android:text="日期"
+        android:textSize="12sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:text="@string/zerenr"
+            android:layout_marginLeft="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/huibao_name"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:text="人名"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:text="@string/neiron"
+            android:layout_marginLeft="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/huibao_neirong"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:text="汇报内容"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:id="@+id/item_fj1"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:textSize="11sp"
+            android:text="@string/fujx"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="88dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_fjtext1"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/xian1"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_marginLeft="88dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_fj2"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_marginLeft="88dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_fjtext2"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/xian2"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_fj3"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_marginLeft="88dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_fjtext3"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/xian3"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_fj4"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_marginLeft="88dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_fjtext4"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/xian4"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_fj5"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_marginLeft="88dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_fjtext5"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:id="@+id/xian5"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_fj6"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_marginLeft="88dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_fjtext6"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:id="@+id/xian6"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_fj7"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_marginLeft="88dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_fjtext7"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:id="@+id/xian7"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_fj8"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_marginLeft="88dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_fjtext8"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:id="@+id/xian8"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_fj9"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_marginLeft="88dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_fjtext9"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:id="@+id/xian9"
+            android:layout_marginLeft="88dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_fj10"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="88dp"
+            android:src="@drawable/pic_xinzeng_fujian3x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_fjtext10"
+            android:layout_centerVertical="true"
+            android:text="hhhh"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <View
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"/>
+</LinearLayout>

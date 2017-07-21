@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:id="@+id/applayout"
+    android:layout_height="74dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp">
+        <ImageView
+            android:id="@+id/filephoto"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_application"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/filename"
+                android:textColor="@color/white"
+                android:layout_marginLeft="12dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:layout_marginTop="12dp"
+                android:textSize="16sp"
+                android:text="@string/filename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/filetiem"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    android:text="@string/filetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/comefrom"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    android:text="@string/comefrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/list_but_nextpage3x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ffffff"/>
+
+</RelativeLayout>
